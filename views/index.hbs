@@ -1,0 +1,25 @@
+<h1>{{title}}</h1>
+<p>This API was last updated at {{date}}.</p>
+<p>
+  <em>Current Version:</em> {{version}}
+</p>
+
+<section id='pancake-listing'>
+  <h2>Pancakes Listing</h2>
+
+</section>
+
+<!-- defining an underscore.js template -->
+<script type="text/template" id="recipe-template">
+  <article>
+    <strong>Ingredients</strong>: <%= ingredients %> <br>
+    <strong>Type</strong>: <%= type %> <br>
+    <strong>Topping</strong>: <%= topping %> <br>
+    <strong>Syrup</strong>: <%= syrup %> <br>
+    <strong>Instructions</strong>: <%= instructions %> <br>
+    <strong>Time</strong>: <%= time %> <br>
+  </article>
+</script>
+
+<!-- loading custom app -->
+<script src='/javascripts/app.js'></script>
